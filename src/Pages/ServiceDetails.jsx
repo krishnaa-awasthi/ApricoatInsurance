@@ -7,8 +7,8 @@ const ServiceDetail = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full min-h-screen bg-blue-50 px-4 py-12 sm:px-6 lg:px-16">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-blue-800 mb-12">
+    <div className="w-full min-h-screen bg-green-50 px-4 py-12 sm:px-6 lg:px-16">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-green-800 mb-12">
         Our Services
       </h2>
 
@@ -28,7 +28,7 @@ const ServiceDetail = () => {
 
             <button
               onClick={() => navigate(`/apricoat-insurance/services/${item.slug}`)}
-              className="mt-6 self-start bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md text-sm sm:text-base font-medium transition-colors duration-200"
+              className="mt-6 self-start bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md text-sm sm:text-base font-medium transition-colors duration-200"
             >
               Learn More
             </button>

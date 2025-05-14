@@ -7,8 +7,8 @@ const Members = ({ isAlternate }) => {
   const [teamMembers] = useContext(TeamProvider);
 
   return (
-    <div className='w-full min-h-screen bg-blue-50 px-4 py-10 sm:px-6 lg:px-10'>
-      <h1 className='text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-6 mt-10 sm:mb-12'>
+    <div className='w-full min-h-screen bg-green-50 px-4 py-10 sm:px-6 lg:px-10'>
+      <h1 className='text-3xl sm:text-4xl font-bold text-center text-green-900 mb-6 mt-10 sm:mb-12'>
         Meet Our Team
       </h1>
 
@@ -22,14 +22,14 @@ const Members = ({ isAlternate }) => {
             key={idx}
             className={cn(
               "bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg",
-              isAlternate ? "border-l-4 border-blue-500" : "border-l-4 border-blue-700"
+              isAlternate ? "border-l-4 border-green-500" : "border-l-4 border-green-700"
             )}
           >
             <div className="p-4 sm:p-6 md:p-8">
               <h3
                 className={cn(
                   "text-lg sm:text-xl font-semibold mb-1",
-                  isAlternate ? "text-blue-500" : "text-blue-700"
+                  isAlternate ? "text-green-500" : "text-green-700"
                 )}
               >
                 {member.name}

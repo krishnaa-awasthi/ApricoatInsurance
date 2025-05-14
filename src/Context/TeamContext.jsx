@@ -7,21 +7,22 @@ const TeamContext = ({children}) => {
             id: 1,
             name: "Mayank Saxena",
             role: "Managing Director & Principal Officer",
-            description: "As the Managing Director and Principal Officer of Apricoat Insurance, Mayank Saxena brings visionary leadership and deep industry expertise to the organization. He oversees strategic planning, regulatory compliance, and overall business growth. His commitment to excellence and client-centric values drives the company's mission to provide reliable and innovative insurance solutions, especially in the marine and fire sectors.",
+            description: "Mayank Saxena, Managing Director and Principal Officer of Apricoat Insurance, brings visionary leadership and deep industry expertise to the organization. He leads strategic planning, ensures regulatory compliance, and drives business growth. With a strong focus on client satisfaction and innovation, especially in marine and fire insurance, his leadership continues to shape Apricoat into a trusted name in the industry.",
             // image: "https://via.placeholder.com/150"
           },
           {
             id: 2,
             name: "Shaifali Saxena",
             role: "On Board Director",
-            description: "Shaifali Saxena serves as the On Board Director at Apricoat Insurance, where she plays a pivotal role in orchestrating and streamlining the onboarding experience for both clients and new employees. With an unwavering commitment to excellence and precision, she ensures that every interaction is tailored, timely, and transparent. Her strategic approach bridges operational efficiency with a human touch, making sure that every stakeholder—from first-time policyholders to newly hired team members—feels informed, welcomed, and empowered. Under her leadership, the onboarding process at Apricoat has evolved into a benchmark of trust, clarity, and confidence, setting the tone for long-term relationships and successful collaborations."
+            description: "Shaifali Saxena serves as the Onboard Director at Apricoat Insurance, where she leads and refines the onboarding experience for both clients and new employees. With a focus on excellence and a personal touch, she ensures every interaction is timely, transparent, and tailored. Her strategic approach blends operational efficiency with empathy, turning onboarding into a benchmark of trust and clarity that fosters lasting relationships and confident collaborations."
             //image: "https://via.placeholder.com/150"
           },
           {
             id: 3,
             name: "Pratyush Mishra",
             role: "Business Development Executive (BDE)",
-            description: "Pratyush plays a vital role in expanding Apricoat Insurance’s reach by spearheading strategic partnerships and uncovering new avenues for sustainable growth. With a deep understanding of market dynamics and customer behavior, he actively forges alliances that enhance our service offerings and open doors to new client segments. His visionary leadership drives forward our client engagement strategies, ensuring Apricoat remains agile, innovative, and responsive to the evolving insurance landscape. Pratyush is instrumental in aligning our business development goals with customer-centric solutions, allowing us to build trust, deliver value, and maintain a strong presence in an ever-competitive industry."            // image: "https://via.placeholder.com/150"
+            description: "Pratyush Mishra is a Business Development Executive at Apricoat Insurance, specializing in marine and fire insurance. With a keen understanding of market dynamics, he identifies growth opportunities and builds strong client relationships. His proactive approach and commitment to excellence drive Apricoat's mission to deliver tailored insurance solutions that meet the evolving needs of clients.",
+            // image: "https://via.placeholder.com/150"
           },
           {
             id: 4,

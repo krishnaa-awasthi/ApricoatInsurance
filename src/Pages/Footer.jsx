@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-10 px-4 text-center">
+    <footer className="bg-green-800 text-white py-10 px-4 text-center">
       {/* Navigation Text */}
       <div className="flex flex-col md:flex-row flex-wrap justify-center gap-x-6 gap-y-4 font-semibold text-sm md:text-base">
         <p>HOME</p>
@@ -29,11 +29,13 @@ const Footer = () => {
       </div>
 
       {/* Contact Info */}
-      <div className="mt-6 text-blue-100 text-sm leading-relaxed max-w-4xl mx-auto text-center space-y-2 px-4">
+      <div className="mt-6 text-green-100 text-sm leading-relaxed max-w-4xl mx-auto text-center space-y-2 px-4">
         <p><span className="font-semibold text-white">Contact Info -</span> +91 - 88 268 56414, +91 - 98 390 32898</p>
-        <p><span className="font-semibold text-white">Regs. off. -</span> Shop No. 23, RPS Plaza, Near Cylinder Chauraha, Keshav Puram,
+        <p><span className="font-semibold text-white">Landline -</span> 0512 316 4926</p>
+        <p><span className="font-semibold text-white">Off. Add. -</span> Office No. 23, RPS Plaza, Near Cylinder Chauraha, Keshav Puram,
           Avas Vikas No. 1 Kalyanpur, Kanpur - 208017</p>
         <p><span className="font-semibold text-white">Email id -</span> apricoatinsurancemarketting@gmail.com, support@apricoat.in</p>
+        
       </div>
     </footer>
   );

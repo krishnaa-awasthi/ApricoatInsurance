@@ -50,11 +50,7 @@ const ServiceContext = (props) => {
           desc: "Home insurance offers coverage for damages to your house and personal belongings due to incidents like fire, natural disasters, theft, vandalism, or accidents. It typically includes two types of coverage: building insurance for the structure of your home, and contents insurance for your personal possessions. Having home insurance helps mitigate the costs of repair or replacement if your home or valuables are damaged. It’s essential for homeowners and renters alike, providing peace of mind knowing that your property is protected from unpredictable events.",
           logo: "🏠",
         },
-        {
-          name: "Travel Insurance",
-          desc: "Travel insurance is designed to protect you from unexpected events that may occur while traveling, such as trip cancellations, lost baggage, medical emergencies, or travel delays. It can also provide coverage for emergency evacuations, trip interruptions, or even accidental death while abroad. Whether you’re traveling internationally or domestically, travel insurance ensures you won’t face financial ruin in case of unforeseen disruptions. This policy is particularly valuable for travelers seeking to safeguard their plans and investments, ensuring a worry-free journey.",
-          logo: "✈️",
-        },
+        
         {
           name: "Commercial Insurance",
           desc: "Commercial insurance provides essential coverage for businesses, safeguarding them from a variety of risks like property damage, employee injuries, legal liabilities, or product-related incidents. This insurance is crucial for protecting business assets, operations, and employees, ensuring that companies can continue functioning smoothly even in the face of unexpected events. Depending on the type of business, it can include general liability insurance, workers’ compensation, product liability, business interruption coverage, and more. For any business, commercial insurance is a critical tool for risk management and long-term sustainability.",
@@ -99,6 +95,11 @@ const ServiceContext = (props) => {
           logo: "👨‍👩‍👧‍👦",
         },
         {
+          name: "Travel Insurance",
+          desc: "Travel insurance is designed to protect you from unexpected events that may occur while traveling, such as trip cancellations, lost baggage, medical emergencies, or travel delays. It can also provide coverage for emergency evacuations, trip interruptions, or even accidental death while abroad. Whether you’re traveling internationally or domestically, travel insurance ensures you won’t face financial ruin in case of unforeseen disruptions. This policy is particularly valuable for travelers seeking to safeguard their plans and investments, ensuring a worry-free journey.",
+          logo: "✈️",
+        },
+        {
           name: "Critical Illness Cover",
           desc: "Critical illness cover provides a lump sum payout upon diagnosis of a serious illness like cancer, heart attack, or stroke. This financial support helps policyholders manage the high costs of treatment for life-threatening illnesses that are not always fully covered by standard health insurance. The lump sum payment can be used for medical expenses, post-treatment care, or even to replace lost income during recovery. Critical illness cover is especially valuable for individuals who want additional protection against severe health conditions that could lead to financial strain.",
           logo: "⚕️",
@@ -131,6 +132,55 @@ const ServiceContext = (props) => {
           name: "Hybrid Mutual Funds",
           desc: "Hybrid mutual funds invest in a combination of stocks and bonds, offering a balanced approach to growth and income. These funds aim to provide moderate growth while managing risk through diversification. Hybrid funds are ideal for investors who want a mix of both equity and debt exposure in one investment vehicle. They offer a diversified portfolio that can help reduce risk while still providing opportunities for capital appreciation and income generation over time.",
           logo: "⚖️",
+        },
+      ],
+    },
+
+    {
+      slug: "claim-support",
+      title: "Claim Support",
+      description:
+        "At Apricoat Insurances, our Claim Support Service ensures fast, transparent, and stress-free assistance when you need it most. From filing to settlement, our dedicated team provides clear guidance, timely updates, and full support—helping you navigate marine, fire, or property claims with confidence and minimal delays.",
+      icon: "🤝",
+      details: [
+        {
+          name: "Claim Intimation / Filing Assistance",
+          desc: "We help you initiate your claim quickly and efficiently through call, email, or our online portal. Our team guides you step-by-step in reporting your loss and beginning the claims process without delays.",
+          logo: "📞📝",
+        },
+        {
+          name: "Documentation Support",
+          desc: "Get expert help in compiling and submitting all required documents. We provide detailed checklists tailored to your claim type, ensuring nothing is missed and your claim proceeds smoothly.",
+          logo: "📄",
+        },
+        {
+          name: "Claim Assessment / Surveyor Coordination",
+          desc: "We coordinate with licensed surveyors and assessors to evaluate the extent of damage or loss. Our team ensures timely inspections and clear communication throughout the process.",
+          logo: "🔍🏢",
+        },
+      ],
+    },
+    {
+      slug: "survey-and-evaluation",
+      title: "Survey and Evaluation",
+      description:
+        "We offer comprehensive pre- and post-claim surveys to evaluate risks and damages accurately. This helps us ensure fair coverage and settlement.",
+      icon: "🧾🧑‍🔧",
+      details: [
+        {
+          name: "Pre-Insurance Survey",
+          desc: "A proactive evaluation conducted before policy issuance to assess risks, especially for high-value or industrial assets.",
+          logo: "🧾",
+        },
+        {
+          name: "Loss Assessment Survey",
+          desc: "An on-site inspection post-incident to assess damage or loss, forming the basis of the claim amount. Our experts provide a detailed report to facilitate the claims process.",
+          logo: "🏗️",
+        },
+        {
+          name: "Surveyor Assignment and Coordination",
+          desc: "We assign certified, experienced surveyors and manage all communications between you and them for a hassle-free experience.",
+          logo: "🤝",
         },
       ],
     },

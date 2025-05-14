@@ -89,8 +89,8 @@ const Nav = () => {
           isSamsung ? "py-2.5" : "py-3"
         } md:py-4`}
       >
-        <div className="text-xl md:text-2xl font-bold text-blue-500">
-          Apricoat Insurance
+        <div className="text-xl md:text-2xl font-bold text-green-500">
+          <img src="public/apricoatNav.svg" alt="Apricoat Insurance" />
         </div>
 
         {/* Desktop Navigation */}
@@ -99,20 +99,20 @@ const Nav = () => {
             <button
               key={item.label}
               onClick={() => handleNav(item.ref, item.hash)}
-              className="text-gray-800 hover:text-blue-500 text-sm lg:text-base font-medium transition-colors duration-200"
+              className="text-gray-800 hover:text-green-500 text-sm lg:text-base font-medium transition-colors duration-200"
             >
               {item.label}
             </button>
           ))}
 
           <Link to="/apricoat-insurance/contact">
-            <button className="text-gray-800 hover:text-blue-500 text-sm lg:text-base font-medium transition-colors duration-200">
+            <button className="text-gray-800 hover:text-green-500 text-sm lg:text-base font-medium transition-colors duration-200">
               Contact Us
             </button>
           </Link>
 
           <Link to="/apricoat-insurance/quotes">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm lg:text-base font-semibold transition-colors duration-200">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm lg:text-base font-semibold transition-colors duration-200">
               Get Quotes
             </button>
           </Link>
@@ -122,7 +122,7 @@ const Nav = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className={`p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+            className={`p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${
               isIOS ? "active:bg-gray-100" : ""
             }`}
             aria-label="Toggle menu"
@@ -147,8 +147,8 @@ const Nav = () => {
           <button
             key={item.label}
             onClick={() => handleNav(item.ref, item.hash)}
-            className={`text-gray-800 hover:text-blue-500 text-lg font-medium w-full text-left py-3 px-3 rounded-md ${
-              isIOS ? "active:bg-gray-100" : "active:bg-blue-50"
+            className={`text-gray-800 hover:text-green-500 text-lg font-medium w-full text-left py-3 px-3 rounded-md ${
+              isIOS ? "active:bg-gray-100" : "active:bg-green-50"
             }`}
           >
             {item.label}
@@ -161,8 +161,8 @@ const Nav = () => {
               setIsOpen(false);
               if (isIOS) document.body.style.overflow = "auto";
             }}
-            className={`text-gray-800 hover:text-blue-500 text-lg font-medium w-full text-left py-3 px-3 rounded-md ${
-              isIOS ? "active:bg-gray-100" : "active:bg-blue-50"
+            className={`text-gray-800 hover:text-green-500 text-lg font-medium w-full text-left py-3 px-3 rounded-md ${
+              isIOS ? "active:bg-gray-100" : "active:bg-green-50"
             }`}
           >
             Contact Us
@@ -175,7 +175,7 @@ const Nav = () => {
               setIsOpen(false);
               if (isIOS) document.body.style.overflow = "auto";
             }}
-            className="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3.5 rounded-md font-semibold transition-colors duration-200"
+            className="w-full mt-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-md font-semibold transition-colors duration-200"
           >
             Get Quotes
           </button>

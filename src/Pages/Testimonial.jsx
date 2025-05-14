@@ -40,7 +40,7 @@ const Testimonials = ({ refProp }) => {
 
   return (
     <section ref={refProp} className="bg-white py-16 px-6 md:px-20 text-center">
-      <h2 className="text-4xl font-bold text-blue-900 mb-4">What Our Clients Say</h2>
+      <h2 className="text-4xl font-bold text-green-900 mb-4">What Our Clients Say</h2>
       <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
         Hear from the businesses and professionals who trust Apricoat Insurance.
       </p>
@@ -54,47 +54,47 @@ const Testimonials = ({ refProp }) => {
           >
             <StarRating rating={t.rating} />
             <p className="text-gray-700 italic mb-4">"{t.message}"</p>
-            <h4 className="font-semibold text-blue-900">{t.name}</h4>
+            <h4 className="font-semibold text-green-900">{t.name}</h4>
             <span className="text-sm text-gray-500">{t.role}</span>
           </div>
         ))}
       </div>
 
       {/* Add Review Form */}
-      <div className="max-w-2xl mx-auto text-left bg-blue-50 p-8 rounded-xl shadow-md">
-        <h3 className="text-2xl font-semibold text-blue-800 mb-6 text-center">Share Your Experience</h3>
+      <div className="max-w-2xl mx-auto text-left bg-green-50 p-8 rounded-xl shadow-md">
+        <h3 className="text-2xl font-semibold text-green-800 mb-6 text-center">Share Your Experience</h3>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="col-span-2">
-            <label className="block text-sm font-medium text-blue-900 mb-1">Full Name</label>
+            <label className="block text-sm font-medium text-green-900 mb-1">Full Name</label>
             <input
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-200 focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-200 focus:outline-none"
               placeholder="John Doe"
               required
             />
           </div>
 
           <div className="col-span-2">
-            <label className="block text-sm font-medium text-blue-900 mb-1">Profession / Company</label>
+            <label className="block text-sm font-medium text-green-900 mb-1">Profession / Company</label>
             <input
               name="role"
               value={formData.role}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-200 focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-200 focus:outline-none"
               placeholder="Business Owner, SafeGuard Pvt. Ltd."
               required
             />
           </div>
 
           <div className="col-span-2">
-            <label className="block text-sm font-medium text-blue-900 mb-1">Your Message</label>
+            <label className="block text-sm font-medium text-green-900 mb-1">Your Message</label>
             <textarea
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-200 focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-200 focus:outline-none"
               placeholder="Share your experience with Apricoat Insurance..."
               rows={4}
               required
@@ -102,7 +102,7 @@ const Testimonials = ({ refProp }) => {
           </div>
 
           <div className="col-span-2">
-            <label className="block text-sm font-medium text-blue-900 mb-2">Rating</label>
+            <label className="block text-sm font-medium text-green-900 mb-2">Rating</label>
             <div className="flex space-x-1 text-2xl text-yellow-400">
               {[1, 2, 3, 4, 5].map((star) => (
                 <FaStar
@@ -121,7 +121,7 @@ const Testimonials = ({ refProp }) => {
           <div className="col-span-2">
             <button
               type="submit"
-              className="bg-blue-800 text-white px-6 py-3 rounded-md hover:bg-blue-900 w-full transition"
+              className="bg-green-800 text-white px-6 py-3 rounded-md hover:bg-green-900 w-full transition"
             >
               Submit Review
             </button>

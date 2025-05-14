@@ -76,6 +76,10 @@
     fill: white;
   }
 
+  25%{
+    fill: #176df7;
+  }
+
   50% {
     fill: #3b82f6;
   }

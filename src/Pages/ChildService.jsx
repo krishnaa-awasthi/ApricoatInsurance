@@ -15,7 +15,7 @@ const ChildServicesPage = () => {
   }
 
   return (
-    <div className="w-full min-h-screen bg-blue-50 px-4 py-10 sm:px-6 lg:px-10">
+    <div className="w-full min-h-screen bg-green-50 px-4 py-10 sm:px-6 lg:px-10">
       <h1 className="text-3xl font-bold mb-4 mt-10 text-center">
         {parentService.title}
       </h1>
@@ -33,7 +33,7 @@ const ChildServicesPage = () => {
             <h2 className="text-xl font-semibold mb-2 italic">{detail.name}</h2>
             <p className="text-gray-600 mb-4 italic">"{detail.desc}"</p>
             <Link to="/apricoat-insurance/quotes">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm lg:text-base font-semibold transition-colors duration-200">
+              <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm lg:text-base font-semibold transition-colors duration-200">
                 Get Quotes
               </button>
             </Link>

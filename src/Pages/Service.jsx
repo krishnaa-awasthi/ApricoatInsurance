@@ -8,13 +8,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const insuranceLogos = [
   "https://seeklogo.com/images/L/lic-of-india-logo-FA4A9AD73C-seeklogo.com.png",
-  "https://companieslogo.com/img/orig/HDB_BIG-092606ce.png?t=1720244492",
-  "https://companieslogo.com/img/orig/SBILIFE.NS-a71de2cc.png?t=1729420182",
-  "https://companieslogo.com/img/orig/IBN_BIG-9ec25662.png?t=1720244492",
-  "https://tse1.mm.bing.net/th?id=OIP.x7muJhpWd9f3Ak2tdfN5gQHaD6&pid=Api&P=0&h=180",
-  "https://images.seeklogo.com/logo-png/13/2/tata-logo-png_seeklogo-135878.png?v=1955208205498858600",
-  "https://tse2.mm.bing.net/th?id=OIP.jCv025elxqYuXA-WSQMojwHaEq&pid=Api&P=0&h=180",
-  "https://tse4.mm.bing.net/th?id=OIP.49ykzwrn1WMg5AtWGl-kYQHaD8&pid=Api&P=0&h=180"
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/New_India_Assurance.svg/1200px-New_India_Assurance.svg.png",
+  "https://www.nivabupa.com/home-page-images/logo-bar-images/Niva-Bupa-Logo.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/9/90/Care_health_insurance_logo.png",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4jBP-I3-tkKnLEeHBaDPpdFRz880oRaTiDA&s",
+  "https://media.licdn.com/dms/image/v2/C561BAQFDUO7CV_koxA/company-background_10000/company-background_10000/0/1584507298872/icici_lombard_general_insurance_company_limited_cover?e=2147483647&v=beta&t=zbXCOm9KGNHS_8Q-YwMknrIaF3nzcD-ZvVYm_NBVlAw",
+ "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/United_India_Insurance.svg/2560px-United_India_Insurance.svg.png",
+  "https://tse4.mm.bing.net/th?id=OIP.49ykzwrn1WMg5AtWGl-kYQHaD8&pid=Api&P=0&h=180",
+  "https://images.seeklogo.com/logo-png/46/2/digit-insurance-logo-png_seeklogo-465810.png"
 ];
 
 const Services = ({ refProp }) => {
@@ -22,6 +23,7 @@ const Services = ({ refProp }) => {
   const cardsRef = useRef([]);
   const sectionRef = useRef(null);
   const sliderRef = useRef(null);
+  const animation = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -45,7 +47,7 @@ const Services = ({ refProp }) => {
 
       // Smooth infinite logo scroll
       const totalWidth = sliderRef.current.scrollWidth / 3;
-      gsap.to(sliderRef.current, {
+      animation.current = gsap.to(sliderRef.current, {
         x: `-${totalWidth}`,
         duration: 20,
         ease: "none",
@@ -53,7 +55,27 @@ const Services = ({ refProp }) => {
       });
     }, sectionRef);
 
-    return () => ctx.revert();
+    // Hover effect to pause/resume animation
+    const sliderElement = sliderRef.current;
+    const stopSlider = () => {
+      if (animation.current) {
+        animation.current.pause();
+      }
+    };
+    const resumeSlider = () => {
+      if (animation.current) {
+        animation.current.resume();
+      }
+    };
+
+    sliderElement.addEventListener("mouseenter", stopSlider);
+    sliderElement.addEventListener("mouseleave", resumeSlider);
+
+    return () => {
+      sliderElement.removeEventListener("mouseenter", stopSlider);
+      sliderElement.removeEventListener("mouseleave", resumeSlider);
+      ctx.revert();
+    };
   }, []);
 
   return (
@@ -64,7 +86,7 @@ const Services = ({ refProp }) => {
       }}
       className="bg-gray-50 py-16 px-6 md:px-20 text-center"
     >
-      <h2 className="text-4xl font-bold text-blue-900 mb-4">
+      <h2 className="text-4xl font-bold text-green-900 mb-4">
         Our Insurance Services
       </h2>
       <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -80,10 +102,10 @@ const Services = ({ refProp }) => {
             ref={(el) => (cardsRef.current[index] = el)}
             className="bg-white rounded-xl shadow-sm p-6 text-left hover:shadow-md transition"
           >
-            <div className="w-12 h-12 flex items-center justify-center bg-blue-50 text-2xl rounded-md mb-4">
+            <div className="w-12 h-12 flex items-center justify-center bg-green-50 text-2xl rounded-md mb-4">
               {service.icon}
             </div>
-            <h3 className="text-xl font-semibold text-blue-900 mb-2">
+            <h3 className="text-xl font-semibold text-green-900 mb-2">
               {service.title}
             </h3>
             <p className="text-gray-600 mb-4">{service.description}</p>
@@ -91,13 +113,13 @@ const Services = ({ refProp }) => {
         ))}
       </div>
 
-      <button className="mt-10 bg-blue-800 hover:bg-blue-900 text-white font-semibold px-6 py-3 rounded-md">
+      <button className="mt-10 bg-green-800 hover:bg-green-900 text-white font-semibold px-6 py-3 rounded-md">
         <Link to="apricoat-insurance/allserivces">View all Services</Link>
       </button>
 
       {/* Partners Logo Slider */}
       <div className="mt-20">
-        <h3 className="text-4xl font-bold text-blue-900 mb-10">Our Partners</h3>
+        <h3 className="text-4xl font-bold text-green-900 mb-10">Our Partners</h3>
         <p className="text-gray-600 mb-12 max-w-3xl mx-auto text-xl">Meet our trusted partners</p>
         <div className="overflow-hidden relative">
           <div

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen w-full bg-white flex flex-col lg:flex-row mt-10">
       {/* Left Section */}
-      <div className="w-full lg:w-1/2 bg-blue-700 text-white px-6 py-10 sm:px-10 lg:px-16 flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 bg-green-700 text-white px-6 py-10 sm:px-10 lg:px-16 flex flex-col justify-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 mt-10">
           VISIT US! WE ARE <br className="hidden sm:block" /> AVAILABLE IN KANPUR
         </h2>
@@ -17,7 +17,7 @@ const Contact = () => {
           href="https://wa.me/918826856414"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-white text-blue-700 font-semibold px-5 py-3 rounded-md hover:bg-blue-100 transition w-max text-sm sm:text-base"
+          className="inline-flex items-center bg-white text-green-700 font-semibold px-5 py-3 rounded-md hover:bg-green-100 transition w-max text-sm sm:text-base"
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
